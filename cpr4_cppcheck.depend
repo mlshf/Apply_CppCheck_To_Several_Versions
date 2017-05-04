@@ -1,0 +1,96 @@
+# depslib dependency file v1.0
+1493910232 source:/home/nikita/cpr4_cppcheck/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<strings.h>
+	<vector>
+	"git_exec.h"
+	"cluster_init.h"
+	"cluster.h"
+	"history_analysis.h"
+	<cctype>
+	"output.h"
+
+1493907418 /home/nikita/cpr4_cppcheck/git_exec.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<strings.h>
+	<vector>
+	<stddef.h>
+	<fstream>
+
+1493910391 /home/nikita/cpr4_cppcheck/cluster_init.h
+	"cluster.h"
+	<boost/filesystem.hpp>
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<strings.h>
+	<vector>
+	<cctype>
+	<cmath>
+	"git_exec.h"
+	"lexical.h"
+
+1493907345 /home/nikita/cpr4_cppcheck/cluster.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<strings.h>
+	<vector>
+
+1493907521 /home/nikita/cpr4_cppcheck/lexical.h
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	<iostream>
+
+1493910375 /home/nikita/cpr4_cppcheck/history_analysis.h
+	"cluster.h"
+	"cluster_init.h"
+	"git_exec.h"
+	<boost/filesystem.hpp>
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<strings.h>
+	<vector>
+	<cctype>
+	<cmath>
+	"lexical.h"
+
+1493907550 /home/nikita/cpr4_cppcheck/output.h
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	<string.h>
+	<strings.h>
+	<vector>
+	"git_exec.h"
+	"cluster_init.h"
+	"cluster.h"
+	"history_analysis.h"
+	<cctype>
+

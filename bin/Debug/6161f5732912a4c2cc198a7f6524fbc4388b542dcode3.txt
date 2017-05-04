@@ -1,0 +1,4 @@
+[code3.c:5]: (error) Array 'buf[11]' accessed at index 12, which is out of bounds.
+[code3.c:5]: (error) Array 'buf[11]' accessed at index 13, which is out of bounds.
+[code3.c:3]: (error) Division by zero.
+[code3.c:5]: (error) Uninitialized variable: buf
