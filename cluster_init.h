@@ -509,7 +509,7 @@ int find_defects(string path, char showflag, ofstream& logfile, string path_to_e
     filename.erase( filename.rfind(".c") , filename.size() );
     filename = filename.substr( filename.rfind("/") +1  );
     //for file described by PATH cppcheck is launched, it's result stored in CPR_cppcheck_output.txt
-    exec_git_command("cppcheck --std=c99 " + path + " 2> " + path_to_exe + SHA1 + filename + ".txt", showflag, logfile);
+    exec_git_command("cppcheck --std=c99 " + path + " 2> " + path_to_exe + "SHA_1___" + SHA1 + "___" + filename + ".txt", showflag, logfile);
 
     return 0;
 };

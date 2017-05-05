@@ -1,0 +1,2 @@
+[code1.c:3]: (error) Division by zero.
+[code1.c:7]: (error) Uninitialized variable: pp

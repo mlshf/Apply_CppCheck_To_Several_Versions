@@ -1,0 +1,3 @@
+[code2_cloneof1.c:3]: (error) Division by zero.
+[code2_cloneof1.c:7]: (error) Division by zero.
+[code2_cloneof1.c:7]: (error) Uninitialized variable: pp
