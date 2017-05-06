@@ -105,7 +105,7 @@ int Fill_Commit_Levels(vector<Commit_Level>* Commit_Levels, vector<string>* Star
 
 int Analyze_History(vector<Commit_Level>* Commit_Levels, string path_to_fake_libc, char showflag, ofstream& logfile)
 {
-    for(size_t i = 1; i < Commit_Levels->size(); ++i)
+    for(size_t i = 0; i < Commit_Levels->size(); ++i)
     {
         for(size_t j = 0; j < (*Commit_Levels)[i].SHA1_of_commits.size(); ++j)
         {

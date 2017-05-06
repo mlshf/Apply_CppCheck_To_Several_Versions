@@ -37,7 +37,7 @@ int string_found_C_extension(std::string path)
     //Found = Found || (path.find(".h++", path.size() - 4) != std::string::npos);
    // Found = Found || (path.find(".hxx", path.size() - 4) != std::string::npos);
 
-    //Found = Found || (path.find(".h", path.size() - 2) != std::string::npos);
+    Found = Found || (path.find(".h", path.size() - 2) != std::string::npos);
     //Found = Found || (path.find(".C", path.size() - 2) != std::string::npos);
     //Found = Found || (path.find(".cc", path.size() - 3) != std::string::npos);
     //Found = Found || (path.find(".cpp", path.size() - 4) != std::string::npos);
@@ -506,7 +506,10 @@ int Exemplars_Are_Equal(Exemplar Original, Exemplar Compared, string path_to_fak
 int find_defects(string path, char showflag, ofstream& logfile, string path_to_exe, string SHA1)
 {
     string filename = path;
-    filename.erase( filename.rfind(".c") , filename.size() );
+    if( filename.find(".c", filename.size() - 2) != std::string::npos )
+        filename.erase( filename.rfind(".c") , filename.size() );
+    else if( filename.find(".h", filename.size() - 2) != std::string::npos )
+        filename.erase( filename.rfind(".h") , filename.size() );
     filename = filename.substr( filename.rfind("/") +1  );
     //for file described by PATH cppcheck is launched, it's result stored in CPR_cppcheck_output.txt
     exec_git_command("cppcheck --std=c99 " + path + " 2> " + path_to_exe + "SHA_1___" + SHA1 + "___" + filename + ".txt", showflag, logfile);
